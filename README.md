@@ -1,6 +1,6 @@
-# timercounter
+# numberunit
 
-倒计时工具.
+单位工具
 
 ## Getting Started
 
@@ -16,7 +16,7 @@ samples, guidance on mobile development, and a full API reference.
 ## Usage
 
 It is really easy to use!
-You should ensure that you add the `timercounter` as a dependency in your flutter project.
+You should ensure that you add the `numberunit` as a dependency in your flutter project.
 
 ```yaml
 dependencies:
