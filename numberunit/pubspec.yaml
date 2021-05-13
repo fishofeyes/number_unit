@@ -1,11 +1,11 @@
 name: numberunit
 description: 单位工具
-version: 0.0.2
+version: 0.0.3
 homepage: https://github.com/eyesoffish/number_unit/tree/master
 
 environment:
-  sdk: ">=2.7.0 <3.0.0"
-  flutter: ">=1.17.0 <2.0.0"
+  sdk: ">=2.12.0 <3.0.0"
+  flutter: ">=2.0.0"
 
 dependencies:
   flutter:

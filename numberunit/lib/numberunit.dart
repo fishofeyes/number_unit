@@ -8,6 +8,7 @@ class NumberUnit {
   /// splichar 分割符号
   static String thousandFormat(num val, {int fixed = 2, String splichar = ","}) {
     if(val == null) return 0.toStringAsFixed(2);
+    if(fixed == null) fixed = 2;
     String temp = val.abs().toStringAsFixed(fixed);
     List<String> arr = temp.split("");
     final index = arr.indexOf(".") - 3;
