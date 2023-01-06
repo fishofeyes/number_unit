@@ -7,11 +7,13 @@ class NumberUnit {
   /// fixed 保留几位小数
   /// splichar 分割符号
   static String thousandFormat(num val, {int fixed = 2, String splichar = ","}) {
-    if(val == null) return 0.toStringAsFixed(2);
-    if(fixed == null) fixed = 2;
-    String temp = val.abs().toStringAsFixed(fixed);
+    String temp = "${fixed == 0 ? val.abs() : val.abs().toStringAsFixed(fixed)}";
     List<String> arr = temp.split("");
-    final index = arr.indexOf(".") - 3;
+    int index = arr.indexOf(".");
+    if(index == -1) {
+      index = arr.length;
+    }
+    index = index - 3;
     for(int i = index; i > 0; i -= 3) {
       arr.insert(i, splichar);
     }
